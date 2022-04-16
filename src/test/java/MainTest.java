@@ -16,4 +16,12 @@ public class MainTest {
         Assertions.assertArrayEquals(expected, Main.sort(input));
     }
 
+    @Test
+    public void testSort2Items() {
+        var expected = new double[]{1.9f, 18.12f};
+        var input = new double[]{18.12f, 1.9f};
+        Assertions.assertArrayEquals(expected, Main.sort(input));
+    }
+
+
 }
